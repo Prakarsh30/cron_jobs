@@ -30,8 +30,8 @@ cron.schedule('0 14 * * *', () => {
   timezone: "Asia/Kolkata"
 });
 
-// 3 PM IST
-cron.schedule('0 15 * * *', () => {
+// 3:15 PM IST
+cron.schedule('15 15 * * *', () => {
   alert();
 }, {
   scheduled: true,

@@ -23,15 +23,7 @@ function alert() {
 }
 
 // 2 PM IST
-cron.schedule('0 14 * * *', () => {
-  alert();
-}, {
-  scheduled: true,
-  timezone: "Asia/Kolkata"
-});
-
-// 3:15 PM IST
-cron.schedule('15 15 * * *', () => {
+cron.schedule('*/30 0 14 * * *', () => {
   alert();
 }, {
   scheduled: true,
